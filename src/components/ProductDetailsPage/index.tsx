@@ -10,7 +10,7 @@ const ModalForFeatureDescription = ({ currentSelectedFeature, onCloseModal }: an
 
             <h1 onClick={onCloseModal} style={{ cursor: "pointer", position: "absolute", top: "2%", right: "2%", color: "white", fontSize: "3rem" }}>&times;</h1>
 
-            "currentSelectedFeature"
+            {currentSelectedFeature}
         </div>
 
     );
