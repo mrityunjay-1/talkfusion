@@ -1,0 +1,91 @@
+.landing-view-try-demo {
+    display: flex;
+    width: 100%;
+}
+
+.landing-view-try-demo>div:nth-child(1) {
+    display: flex;
+    width: 60%;
+    /* background-color: red; */
+    padding: 3rem;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.landing-view-try-demo>div:nth-child(2) {
+    display: flex;
+    width: 40%;
+    /* background-color: red; */
+    padding: 3rem;
+    justify-content: space-between;
+}
+
+.anchorbutton {
+    transition: all o.1s linear;
+    text-decoration: none;
+    cursor: pointer;
+    width: 70%;
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 1.5rem 4rem;
+    color: white;
+    border-radius: 30rem;
+    border: 0.3rem solid green;
+}
+
+.anchorbutton:hover {
+    background: linear-gradient(to bottom right, lightgreen, green);
+}
+
+.landing-view-try-demo>div:nth-child(1)>div:nth-child(1) {
+    display: flex;
+    /* background: linear-gradient(to bottom right, lightgreen, green); */
+    border: 0.3rem solid green;
+    padding: 3rem;
+    width: 48%;
+    height: 80%;
+    border-radius: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* overflow: auto; */
+}
+
+.landing-view-try-demo>div:nth-child(1)>div:nth-child(2) {
+    display: flex;
+    /* background: linear-gradient(to bottom right, lightgreen, green); */
+    border: 0.3rem solid green;
+    padding: 3rem;
+    width: 48%;
+    height: 80%;
+    border-radius: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* overflow: auto; */
+}
+
+@media(max-width: 76rem) {
+
+    .landing-view-try-demo {
+        flex-direction: column;
+    }
+
+    .landing-view-try-demo>div:nth-child(1) {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .landing-view-try-demo>div:nth-child(2) {
+        width: 100%;
+    }   
+
+    .landing-view-try-demo>div:nth-child(1) > div:nth-child(1){
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .landing-view-try-demo>div:nth-child(1) > div:nth-child(2){
+        width: 100%;
+    }
+}

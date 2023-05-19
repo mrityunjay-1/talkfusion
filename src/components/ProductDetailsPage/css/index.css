@@ -1,0 +1,84 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: min-content auto;
+    grid-template-areas:
+        'heading heading heading'
+        'firstleft firstmid firstright'
+        'secondleft secondmid secondright'
+    ;
+    grid-gap: 2rem;
+    height: 100%;
+    flex: 1;
+    padding: 1% 2% 2% 2%;
+}
+
+.grid-container>div {
+    background-color: aliceblue;
+    border-radius: 2.5rem;
+    padding: 2rem;
+    background: linear-gradient(to top right, transparent, transparent, transparent, transparent, rgb(4, 42, 4));
+    border: 0.01rem solid lightgrey;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 1.8rem;
+    color: grey;
+}
+
+.grid-container>div:nth-child(1):hover {
+    background: none;
+}
+
+.grid-container>div:hover {
+    background: linear-gradient(to top right, green, lightgreen);
+    color: white;
+}
+
+.grid-container>div:nth-child(1) {
+    grid-area: heading;
+    display: block;
+    border: none;
+    background: none;
+}
+
+.grid-container>div:nth-child(2) {
+    grid-area: firstleft;
+}
+
+.grid-container>div:nth-child(3) {
+    grid-area: firstmid;
+}
+
+.grid-container>div:nth-child(4) {
+    grid-area: firstright;
+}
+
+.grid-container>div:nth-child(5) {
+    grid-area: secondleft;
+}
+
+.grid-container>div:nth-child(6) {
+    grid-area: secondmid;
+}
+
+.grid-container>div:nth-child(6) {
+    grid-area: secondright;
+}
+
+@media(max-width: 78rem) {
+    .grid-container {
+        grid-template-areas:
+            'heading'
+            'firstleft'
+            'firstmid'
+            'firstright'
+            'secondleft'
+            'secondmid'
+            'secondright'
+        ;
+        width: 100%;
+    }
+}
