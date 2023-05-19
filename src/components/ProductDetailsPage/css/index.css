@@ -12,7 +12,7 @@
     padding: 1% 2% 2% 2%;
 }
 
-.grid-container>div {
+.grid-container > div {
     background-color: aliceblue;
     border-radius: 2.5rem;
     padding: 2rem;
@@ -24,8 +24,10 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: grey;
+    user-select: none;
+    transition: all 0.3s linear;
 }
 
 .grid-container>div:nth-child(1):hover {
@@ -33,7 +35,7 @@
 }
 
 .grid-container>div:hover {
-    background: linear-gradient(to top right, green, lightgreen);
+    background: green;
     color: white;
 }
 
@@ -80,5 +82,6 @@
             'secondright'
         ;
         width: 100%;
+        padding: 5%;
     }
 }

@@ -1,0 +1,10 @@
+.modalForFeature {
+    display: grid;
+    position: fixed;
+    top: 15%;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    background-color: black;
+    padding: 5%;
+}

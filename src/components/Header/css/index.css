@@ -80,7 +80,7 @@
     flex-direction: column;
 }
 
-.left-panel > div:nth-child(1) {
+.left-panel>div:nth-child(1) {
     padding: 3rem;
     color: rgb(26, 172, 24);
     font-size: 1.6rem;
@@ -95,6 +95,7 @@
 }
 
 @media(max-width: 76rem) {
+
     .header {
         display: none;
     }

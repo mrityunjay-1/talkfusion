@@ -7,11 +7,9 @@ function App() {
     return (
         <>
 
-        <div style={{position: "absolute", bottom: "3%", width: "100%"}}>
-
+            {/* <div style={{position: "absolute", bottom: "3%", width: "100%"}}>
             <h1 style={{color: "white", textAlign: "center"}}>^^ Keep Going Down for trail ^^</h1>
-
-        </div>
+            </div> */}
 
 
             <div className="landing-view">
@@ -25,7 +23,7 @@ function App() {
 
 
                     <p style={{ color: "grey", fontSize: "1.3rem", width: "70%" }}>
-                    Flip the script on inbound + outbound voice operations to drive better outcomes at a lower cost.
+                        Flip the script on inbound + outbound voice operations to drive better outcomes at a lower cost.
                     </p>
 
                     <br /><br /><br /><br />
