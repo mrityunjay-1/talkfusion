@@ -6,7 +6,7 @@
 }
 
 @keyframes image {
-from {
+  from {
     transform: rotate(0deg);
   }
 
@@ -22,13 +22,51 @@ from {
 
 }
 
-.landing-view > div:nth-child(1) {
+.landing-view>div:nth-child(1) {
   padding: 2% 10% 5% 5%;
   width: 60%;
 }
 
-.landing-view > div:nth-child(2) {
+.landing-view>div:nth-child(2) {
   width: 40%;
   overflow: hidden;
   padding-top: 5%;
+}
+
+.coming-soon {
+  color: rgb(26, 172, 24);
+  font-size: 5rem;
+}
+
+#notify-me {
+  padding: 2rem 5rem;
+  font-size: 2.3rem;
+}
+
+@media(max-width: 76rem) {
+  .landing-view {
+    flex-direction: column;
+  }
+
+  .landing-view>div:nth-child(1) {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  html {
+    font-size: 50%;
+  }
+
+  .landing-view>div:nth-child(2) {
+    width: 100%;
+  }
+
+  .coming-soon {
+    font-size: 3rem;
+  }
+
 }

@@ -20,15 +20,18 @@
     padding: 3rem;
 }
 
-.header>div:nth-child(2)>a {
+.header>div:nth-child(2) .link {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
     font-size: 1.5rem;
     margin-right: 2.5rem;
     transition: all 0.3s linear;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.header>div:nth-child(2)>a:hover {
+.header>div:nth-child(2) .link:hover {
     color: white;
 }
 
@@ -78,6 +81,7 @@
     width: 80%;
     display: none;
     flex-direction: column;
+    padding: 2rem;
 }
 
 .left-panel>div:nth-child(1) {
@@ -106,6 +110,13 @@
 
     .active {
         display: flex;
+    }
+
+    .link {
+        background: none;
+        color: white;
+        border: none;
+        padding: 2rem;
     }
 
 }

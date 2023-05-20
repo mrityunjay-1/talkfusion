@@ -15,7 +15,7 @@ function App() {
             <div className="landing-view">
                 <div>
 
-                    <p className="heading" style={{ color: "white", fontSize: "4.5rem", }}>
+                    <p className="heading">
                         GENERATIVE VOICE BOT FOR INTERACTIVE SALES, SUPPORT AND EVERYTHING IN BETWEEN DEPLOY ON VOIP AND PSTN.
                     </p>
 
@@ -28,11 +28,11 @@ function App() {
 
                     <br /><br /><br /><br />
 
-                    <h1 style={{ color: "rgb(26, 172, 24)", fontSize: "5rem" }}>Coming Soon...</h1>
+                    <h1 className="coming-soon">Coming Soon...</h1>
 
                     <br /><br /><br />
 
-                    <a style={{ fontSize: "2.3rem", padding: "2rem 5rem", color: "white", borderRadius: "0.4rem", background: "linear-gradient(to top right, green, lightgreen)" }}>Notify me</a>
+                    <button className="link-as-button" id="notify-me" > Notify me </button>
 
                 </div>
 
